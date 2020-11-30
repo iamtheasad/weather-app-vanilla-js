@@ -17,11 +17,10 @@ body {
     background-image: url("../images/weather-bg-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     background-position: center;
     position: relative;
     z-index: 1;
-    height: 100vh;
+    height: 100%;
 }
 
 .wrapper:after {
@@ -38,7 +37,6 @@ body {
 
 .bg_custom {
     background-image: url("../images/weather-bg-2.jpg");
-    background-position: bottom;
     border: 1px solid #fff;
     color: #fff;
 }
@@ -50,4 +48,16 @@ body {
 
 .copyright a {
     color: #fff;
+}
+
+#w_icon {
+    width: 20%;
+}
+
+#locModal {
+    z-index: 10;
+}
+
+.modal-backdrop {
+    z-index: 5;;
 }

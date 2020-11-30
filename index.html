@@ -45,16 +45,16 @@
    <div class="container">
       <div class="row">
          <div class="col-md-5 text-center mx-auto mt-5 p-5 rounded bg_custom">
-            <h1 id="w_location" class="text-light"></h1>
-            <h3 id="w_desc" class="text-light"></h3>
-            <h3 id="w_string" class="text-light"></h3>
+            <h1 id="w_location" class="text-light">City</h1>
+            <h3 id="w_desc" class="text-light">Raining</h3>
+            <h3 id="w_string" class="text-light">20 C</h3>
 
-            <img id="w_icon" src="" alt="icon">
+            <img id="w_icon" src="favicon.svg" alt="icon">
 
             <ul class="list-group mt-3" id="w_details">
-               <li class="list-group-item mb-2 bg_custom" id="w_humidity"></li>
-               <li class="list-group-item mb-2 bg_custom" id="w_pressure"></li>
-               <li class="list-group-item mb-2 bg_custom" id="w_wind"></li>
+               <li class="list-group-item mb-2 bg_custom" id="w_humidity">Humidity</li>
+               <li class="list-group-item mb-2 bg_custom" id="w_pressure">Pressure</li>
+               <li class="list-group-item mb-2 bg_custom" id="w_wind">Wind Speed</li>
             </ul>
 
             <hr>
@@ -64,9 +64,36 @@
             </button>
          </div>
       </div>
+
       <div class="row">
          <div class="col-md-7 mx-auto text-center mt-2">
             <span class="copyright">Weather App || Developed By <a href="#">Md. Asaduzzaman Rana</a></span>
+         </div>
+      </div>
+   </div>
+</div>
+
+<div class="modal fade" id="locModal" tabindex="-1" role="dialog">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title">Change Location</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <form id="w_form">
+               <div class="form-group">
+                  <label for="city">City</label>
+                  <input type="text" class="form-control" id="city" aria-describedby="emailHelp" placeholder="Enter City">
+                  <small id="emailHelp" class="form-text text-muted">Enter Your City Here</small>
+               </div>
+            </form>
+         </div>
+         <div class="modal-footer">
+            <button id="w_change_btn" type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
          </div>
       </div>
    </div>
@@ -92,8 +119,8 @@
 <!-- Font Awesome CDN or Kit js link -->
 <!-- <script src="https://kit.fontawesome.com/41baba5a65.js" crossorigin="anonymous"></script> -->
 
-<script src="assets/js/ui.js"></script>
 <script src="assets/js/weather.js"></script>
+<script src="assets/js/ui.js"></script>
 <!-- Default JS -->
 <script src="assets/js/app.js"></script>
 </body>
