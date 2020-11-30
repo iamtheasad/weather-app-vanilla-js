@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="It's a live weather app">
+   <meta name="keywords" content="HTML,CSS,JavaScript">
+   <meta name="author" content="iamtheasad">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+   <!-- Favicon -->
+   <link rel="icon" href="favicon.svg" type="image/png">
+
+   <title>Live Weather App</title>
+
+   <!-- CSS Links -->
+
+   <!-- Google Material icons CDN Link -->
+   <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+
+   <!-- Font Awesome CSS Link -->
+   <link rel="stylesheet" href="assets/css/all.min.css">
+
+   <!-- Bootstrap CSS Link -->
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+   <!-- Bootstrap CSS CDN Link -->
+   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+   <!-- Default CSS -->
+   <link rel="stylesheet" href="assets/css/style.css">
+
+   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+   <!--[if lt IE 9]>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+   <![endif]-->
+</head>
+
+<body>
+<div class="wrapper">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-5 text-center mx-auto mt-5 p-5 rounded bg_custom">
+            <h1 id="w_location" class="text-light"></h1>
+            <h3 id="w_desc" class="text-light"></h3>
+            <h3 id="w_string" class="text-light"></h3>
+
+            <img id="w_icon" src="" alt="icon">
+
+            <ul class="list-group mt-3" id="w_details">
+               <li class="list-group-item mb-2 bg_custom" id="w_humidity"></li>
+               <li class="list-group-item mb-2 bg_custom" id="w_pressure"></li>
+               <li class="list-group-item mb-2 bg_custom" id="w_wind"></li>
+            </ul>
+
+            <hr>
+
+            <button type="button" class="btn btn-outline-success bg_custom" data-toggle="modal"
+                    data-target="#locModal">Change Location
+            </button>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-7 mx-auto text-center mt-2">
+            <span class="copyright">Weather App || Developed By <a href="#">Md. Asaduzzaman Rana</a></span>
+         </div>
+      </div>
+   </div>
+</div>
+
+<!-- Javascript Links -->
+
+<!-- jQuery Link -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<!-- jQuery CDN Links -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+
+<!-- Bootstrap js Link -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootstrap CDN link -->
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+   crossorigin="anonymous"></script> -->
+
+<!-- Font Awesome JS link -->
+<script src="assets/js/all.min.js"></script>
+<!-- Font Awesome CDN or Kit js link -->
+<!-- <script src="https://kit.fontawesome.com/41baba5a65.js" crossorigin="anonymous"></script> -->
+
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/weather.js"></script>
+<!-- Default JS -->
+<script src="assets/js/app.js"></script>
+</body>
+
+</html>

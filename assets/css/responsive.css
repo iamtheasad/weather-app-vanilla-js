@@ -1,0 +1,50 @@
+/* Larg Layout: 992px-1280px */
+@media only screen and (min-width: 992px) and (max-width: 1280px) {}
+
+/* Large Layout: 992px-1280px End */
+
+/* Large Layout: 992px Start */
+@media only screen and (min-width: 992px) {}
+
+/* Large Layout: 992px End */
+
+
+/* Tablet & Mobile Layout: 0px-991px */
+@media only screen and (max-width: 991px) {}
+
+/* Tablet & Mobile Layout: 0px-991px End */
+
+
+/* Tablet Layout: 768px-991px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+/* Tablet Layout: 768px-991px End */
+
+
+/* Mobile Layout: 0px-767px */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Layout: 0px-767px End */
+
+
+/* Wide Mobile Layout: 576px-767px Start */
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+/* Wide Mobile Layout:576px-767px End */
+
+
+/* Small Devices: 0px-575px Start */
+@media only screen and (max-width: 575px) {
+   .service_arrow_1 {
+      display: none;
+   }
+}
+
+/* Small Devices: 0px-575px End */
+
+/* From Codur Trust */
+/* @media only screen and (min-width: 320px) {}
+@media only screen and (min-width: 480px) {}
+@media only screen and (min-width: 767px) {}
+@media only screen and (min-width: 991px) {}
+@media only screen and (min-width: 1200px) {} */
