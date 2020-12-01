@@ -13,10 +13,47 @@ getCity().then(data => {
 	// Init Weather
 	const weather = new Weather(data.city);
 	
-    console.log(data.city);
 	weather.getWeather().then(data => {
-		console.log(data)
 		ui.paint(data);
-	});
+	}).catch(err => {
+		console.log(err);
+		ui.notFound();
+	});	
 });
+
+const city = document.getElementById("w_change_btn").addEventListener("click", ()=>{
+	const city = document.getElementById("city").value;
+	
+	
+	if(city === ""){
+		alert("You must type a valid name. It can not be empty");
+	}else {
+		// Init Weather
+		const weather = new Weather(city);
+		weather.getWeather().then(data => {
+			ui.paint(data);
+		}).catch(err => {
+			console.log(err);
+			ui.notFound();
+		});	
+	}
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

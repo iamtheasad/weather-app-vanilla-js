@@ -14,13 +14,14 @@ body {
 }
 
 .wrapper {
-    background-image: url("../images/weather-bg-1.jpg");
+    background-image: url("../images/weather-bg-2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
     z-index: 1;
-    height: 100vh;
+    height: auto;
+	padding: 20px;
 }
 
 .wrapper:after {
@@ -36,7 +37,7 @@ body {
 }
 
 .bg_custom {
-    background-image: url("../images/weather-bg-2.jpg");
+    background-image: url("../images/weather-bg-1.jpg");
     border: 1px solid #fff;
     color: #fff;
 }
@@ -60,4 +61,13 @@ body {
 
 .modal-backdrop {
     z-index: 5;;
+}
+
+.wrapper h1 {
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.wrapper h3 {
+    text-transform: capitalize;
 }

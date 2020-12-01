@@ -18,4 +18,14 @@ class UI {
         this.pressure.textContent = "Air Pressure :" + weather.main.pressure + " \u00B0";
         this.wind.textContent = "Wind Speed :" + weather.wind.speed + "km/h";
 	}
+	
+	notFound(){
+		this.location.textContent = "Not Found";
+        this.desc.textContent = "";
+        this.string.textContent = "";
+        this.icon.src = ``;
+        this.humidity.textContent = "";
+        this.pressure.textContent = "";
+        this.wind.textContent = "";
+	}
 }
